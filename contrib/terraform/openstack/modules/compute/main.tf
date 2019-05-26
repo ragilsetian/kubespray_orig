@@ -1,5 +1,5 @@
 resource "openstack_compute_keypair_v2" "k8s" {
-  name       = "key-kube3"
+  name       = "new-keypair"
   public_key = "${chomp(file(var.public_key_path))}"
 
 }
